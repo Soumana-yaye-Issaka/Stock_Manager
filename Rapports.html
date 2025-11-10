@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Dashbord.css">
+</head>
+<body>
+  
+    <input type="checkbox" id="menu-toggle" hidden>
+
+       <div class="Dashboard">
+          <ul>
+                <li>
+                    <i class="fa-solid fa-gauge"></i> <a href="Tableau_de_Bord.html">Tableau de bord</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chart-line"></i> <a href="Analytique.html">Analytics</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-cart-shopping"></i> <a href="Gestion_Commande.html">Commandes</a> 
+                </li>
+                <li>
+                    <i class="fa-solid fa-gears"></i> <a href="Parametre.html">Parametre</a>
+                 </li>
+                <li>
+                    <i class="fa-solid fa-chart-bar"></i> <a href="Rapports.html">Rapports</a>
+                </li>
+                <li> 
+                    <i class="fa-solid fa-bell"></i> <a href="Notification.html">Notification</a> 
+                </li>
+            </ul>
+            <div class="Champ1">
+                <section class="sect1">
+                   <i class="fa-solid fa-circle-user"></i>
+                    <article class="Art1">
+                        <h4>Administrateur</h4>
+                        <p>Gestionaire</p>
+                    </article>
+                </section>
+
+            <section class="sect2">
+                <i class="fa-solid fa-circle-user"></i>
+                <article class="Art2">
+                    <a href="#Profils">Mon Profil</a>
+                </article>
+            </section>
+
+                <section class="sect3">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <article class="Art2">
+                        <a href="index.html">Déconnection</a>
+                    </article>
+                </section>
+
+            </div>
+       </div>
+
+       <div class="Champ2">
+
+            <nav class="NavBar">
+                 <section class="Burger">
+                    <div class="SouBurger">
+                        <label for="menu-toggle" class="menu-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                    </div>
+                <h3>Gestion de stock - ProduitS Electroniques</h3>
+                 </section>
+                <section class="SouNav">
+                        <i class="fa-solid fa-bell"></i>
+                    <article>
+                        <p> <i class="fa-solid fa-circle-user"></i> Administrateur</p>
+                    </article>
+                </section>
+            </nav>
+
+         <!---------------PARTIE_RAPPORTS & ANALYTIQUE------------------->
+            <main>
+                <section>
+                    <h2> <i class="fa-solid fa-chart-bar"></i> Rapports & Analytique</h2>
+                    <p>Génération et consultation des rapports détaillés</p>
+                </section>
+
+                <section class="sect5">
+                   
+                    <div class="Sousect2">
+
+                        <div class="Sousect1">
+                            <label for="">Type de rapport:</label> <br>
+                            <select name="" id="">
+                                <option value=""> Rapport des ventes</option>
+                                <option value="">Rapport de stcok</option>
+                                 <option value="">Rapport financier</option>
+                                <option value="">Rapport clients</option>
+                            </select>
+                        </div>
+
+                        <div class="Sousect1">
+                            <label for="">Période:</label> <br>
+                            <select name="" id="">
+                                 <option value=""> Ce mois</option>
+                                 <option value="">Aujourd'hui </option>
+                                 <option value="">Cette semaine</option>
+                                 <option value="">Ce trimestre</option>
+                                 <option value="">Cette année</option>
+                            </select>
+                        </div>
+
+                        <div class="Sousect1">
+                            <label for="">Format:</label> <br>
+                            <select name="" id="">
+                                 <option value=""> PDF</option>
+                                 <option value="">Excel</option>
+                                 <option value="">CSV</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <button> <i class="fa-solid fa-file"></i> Générer le rapport</button>
+                        </div>
+                    </div>
+                    
+
+                </section>
+
+                <section class="sect6">
+                        <div class="Sousect3">
+                             <article class="Art5"><i class="fa-solid fa-chart-line"></i></article>
+
+                             <article class="Art6">
+                                <h4>Ventes du mois</h4>
+                                <div class="SouArt">
+                                    <aside>
+                                        <span>€45,678</span>
+                                        <p>Chiffre d'affaire</p>
+                                    </aside>
+
+                                    <aside>
+                                        <span>€12.5%</span>
+                                        <p>VS mois dernier</p>
+                                    </aside>
+                                </div>
+
+                                <button><a href="">Voir détails</a></button>
+
+                             </article>
+
+                        </div>
+
+                           <div class="Sousect3">
+                             <article class="Art5"><i class="fa-solid fa-boxes-stacked"></i></article>
+
+                             <article class="Art6">
+                                <h4>Etat du stock</h4>
+                                <div class="SouArt">
+                                    <aside>
+                                        <span>1,234</span>
+                                        <p>Articles en stock</p>
+                                    </aside>
+
+                                    <aside>
+                                        <span>23</span>
+                                        <p>Stock faible</p>
+                                    </aside>
+                                </div>
+
+                                <button><a href="">Voir détails</a></button>
+
+                             </article>
+
+                        </div>
+
+                           <div class="Sousect3">
+                             <article class="Art5"><i class="fa-solid fa-users"></i></article>
+
+                             <article class="Art6">
+                                <h4>Clients</h4>
+                                <div class="SouArt">
+                                    <aside>
+                                        <span>856</span>
+                                        <p>Nouveau clients</p>
+                                    </aside>
+
+                                    <aside>
+                                        <span>2,345</span>
+                                        <p>Total clients</p>
+                                    </aside>
+                                </div>
+
+                                <button><a href="">Voir détails</a></button>
+
+                             </article>
+
+                        </div>
+                </section>
+
+                <section class="sect7">
+                    <h2> <i class="fa-solid fa-clock-rotate-left"></i> Historique des Rapports</h2>
+                </section>
+
+         <!-- ______________Tableau2_Partie_Analytiques____________________________-->
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom du Rapport</th>
+                            <th>Type</th>
+                            <th>Date de génération</th>
+                            <th>Statut</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <i class="fa-solid fa-file"></i> Rapport_ventes_janvier_2024.pdf</td>
+                            <td>Ventes</td>
+                            <td>15 Jan 2024</td>
+                            <td>Terminé</td>
+                            <td>
+                                <div class="SouTab2_1">
+                                    <i class="fa-solid fa-download"></i> 
+                                    <i class="fa-solid fa-trash"></i> 
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td> <i class="fa-solid fa-file-excel"></i> Stock_iventaire_janvier_2024.xlsx</td>
+                            <td>Stock</td>
+                            <td>14 Jan 2024</td>
+                            <td>Terminé</td>
+                            <td>
+                                <div class="SouTab2_1">
+                                    <i class="fa-solid fa-download"></i> 
+                                    <i class="fa-solid fa-trash"></i> 
+                                </div>
+                            </td>
+                        </tr>
+
+                         <tr>
+                            <td><i class="fa-solid fa-spinner"></i> Rapport_financier_trimestre.xlsx</td>
+                            <td>Financier</td>
+                            <td>En cours....</td>
+                            <td>En cours</td>
+                            <td class="SouTab2_1"><i class="fa-solid fa-xmark"></i></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                
+            </main>
+
+            <!-- -----------Partie_Profile___________ -->
+
+        <div class="Profil" id="Profils">
+            <div class="SouProfil">
+                <section class="SouProfil1">
+                    <h2><i class="fa-solid fa-user"></i> Mon Profil</h2>
+                    <h2><a href="#"><i class="fa-solid fa-x"></i></a></h2>
+                </section>
+
+                <section class="SouProfil2">
+                    <article class="Art_Profil1"><i class="fa-solid fa-user"></i></article>
+                    <button>Changer La photo</button>
+                </section>
+
+                <section class="SouProfil3">
+                    <article class="Art_Profil2">
+                        <label for="Nom">Nom:</label> <br>
+                        <input type="text" placeholder="">
+                    </article>
+
+                    <article class="Art_Profil2">
+                        <label for="Nom">Prénom:</label> <br>
+                        <input type="text" placeholder="">
+                    </article>
+
+                </section>
+
+                <section class="SouProfil3">
+                    <article class="Art_Profil2">
+                        <label for="Nom">Email:</label> <br>
+                        <input type="email" placeholder="">
+                    </article>
+
+                    <article class="Art_Profil2">
+                        <label for="Nom">Téléphone:</label> <br>
+                        <input type="tel" placeholder="">
+                    </article>
+
+                </section>
+                
+                <div class="SouProfil5">
+                    <section class="SouProfil5_1">
+                         <article class="Art_Profil2">
+                            <label for="Nom">Role:</label> 
+                            <input type="text" placeholder="">
+                        </article>
+                    </section>
+
+                    <section class="SouProfil5_1">
+                        <article class="Art_Profil2">
+                             <label for="Nom">Dernier Connexion:</label> 
+                            <input type="text" placeholder="">
+                        </article>
+                    </section>
+
+                </div>
+                
+                <div class="SouProfil6">
+                    <button>Fermer</button>
+                    <button>Sauvegarder</button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

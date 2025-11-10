@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Dashbord.css">
+</head>
+<body>
+  
+    <input type="checkbox" id="menu-toggle" hidden>
+
+       <div class="Dashboard">
+          <ul>
+                <li>
+                    <i class="fa-solid fa-gauge"></i> <a href="Tableau_de_Bord.html">Tableau de bord</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chart-line"></i> <a href="Analytique.html">Analytics</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-cart-shopping"></i> <a href="Gestion_Commande.html">Commandes</a> 
+                </li>
+                <li>
+                    <i class="fa-solid fa-gears"></i> <a href="Parametre.html">Parametre</a>
+                 </li>
+                <li>
+                    <i class="fa-solid fa-chart-bar"></i> <a href="Rapports.html">Rapports</a>
+                </li>
+                <li> 
+                    <i class="fa-solid fa-bell"></i> <a href="Notification.html">Notification</a> 
+                </li>
+            </ul>
+            <div class="Champ1">
+                <section class="sect1">
+                   <i class="fa-solid fa-circle-user"></i>
+                    <article class="Art1">
+                        <h4>Administrateur</h4>
+                        <p>Gestionaire</p>
+                    </article>
+                </section>
+
+                 <section class="sect2">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <article class="Art2">
+                        <a href="#Profils">Mon Profil</a>
+                    </article>
+                </section>
+
+                <section class="sect3">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <article class="Art2">
+                        <a href="index.html">Déconnection</a>
+                    </article>
+                </section>
+
+            </div>
+       </div>
+
+       <div class="Champ2">
+
+            <nav class="NavBar">
+                <section class="Burger">
+                    <div class="SouBurger">
+                        <label for="menu-toggle" class="menu-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                    </div>
+                <h3>Gestion de stock - ProduitS Electroniques</h3>
+                </section>
+                 
+                <section class="SouNav">
+                        <i class="fa-solid fa-bell"></i>
+                    <article>
+                        <p> <i class="fa-solid fa-circle-user"></i> Administrateur</p>
+                    </article>
+                </section>
+            </nav>
+
+         <!---------------PARTIE_NOTIFICATION------------------->
+            <main>
+
+              <div>
+                <h2> <i class="fa-solid fa-bell"></i> Notifications & Alertes</h2>
+                <p>Centre de notifications et gestion des alertes</p>
+              </div>
+              <section class="NotiSect1">
+
+                <div class="Sou_Notisect1">
+                    <article class="NotiArt1"> 
+                        <i class="fa-solid fa-envelope"></i>
+                    </article>
+                    <article>
+                        <h3>12</h3>
+                        <p>Non lues</p>
+                    </article>
+                </div>
+
+                <div class="Sou_Notisect1">
+                    <article class="NotiArt2"> 
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </article>
+                    <article>
+                        <h3>3</h3>
+                        <p>Urgentes</p>
+                    </article>
+                </div>
+
+                <div class="Sou_Notisect1">
+                    <article class="NotiArt3"> 
+                        <i class="fa-solid fa-briefcase"></i>
+                    </article>
+                    <article>
+                        <h3>23</h3>
+                        <p>Aujourd'hui</p>
+                    </article>
+                </div>
+
+                <div class="Sou_Notisect1">
+                    <article class="NotiArt4"> 
+                        <i class="fa-solid fa-list"></i>
+                    </article>
+                    <article>
+                        <h3>156</h3>
+                        <p>Total</p>
+                    </article>
+                </div>
+
+              </section>
+
+                <section class="NotiSect2">
+
+                    <div class="Sou_Notisect3">
+                        <div class="Sou_Notisect2">
+                            <label for="">Type:</label> <br>
+                            <select>
+                                <option>Toutes</option>
+                                <option>Stock</option>
+                                <option>Commandes</option>
+                                <option>Système</option>
+                                <option>Sécurité</option>
+                            </select>
+                        </div>
+
+                       <div class="Sou_Notisect2">
+                        <label for="">Priorité:</label> <br>
+                         <select>
+                            <option>Toutes</option>
+                            <option>Urgente</option>
+                            <option>Haute</option>
+                            <option>Moyenne</option>
+                            <option>Basse</option>
+                        </select>
+                       </div>
+
+                       <div class="Sou_Notisect2">
+                        <label for="">Statut:</label> <br>
+                         <select>
+                            <option>Toutes</option>
+                            <option>Non lues</option>
+                            <option>Lues</option>
+                        </select>
+                       </div>
+
+                        <button> <i class="fa-solid fa-filter"></i> Filtrer </button>
+                    </div>
+
+                </section>
+
+                <section class="NotiSect3">
+
+                    <div class="Alerte">
+                        <div class="Sou_Notisect5">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                    </div>
+
+                    <div class="Sou_Notisect4">
+                        <div class="Sou_Notisect6">
+                               <div class="Il_a_5mnt">
+                                 <h4>Stock Critique détecté</h4>
+                                <p>Il y a 5 minutes</p>
+                               </div>
+                                <p>Le produit "AirPods Pro" a atteint le seuil critique de stock (3 unités restantes). Veuillez passer commande rapidement.</p>
+                             <section class="NotiBouton">
+                                <button>passer commande</button>
+                                <button>Marquer comme lu</button>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+
+                 <section class="NotiSect4">
+
+                    <div class="Alerte">
+                        <div class="Sou_Notisect6_1">
+                            <i class="fa-solid fa-exclamation"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="Sou_Notisect4">
+                        <div class="Sou_Notisect6">
+                                <div class="Il_a_5mnt">
+                                     <h4>Nouvelle commande reçue</h4>
+                                     <p>Il y a 15 minutes</p>
+                                </div>
+                                <p>Commande #CMD-2024-004 reçue de Marie Dubois pour un MacBook Pro 16" (€2,899.00).</p>
+                             <section class="NotiBouton">
+                                <button class="NotiBouton1">Voir la commande </button>
+                                <button>Marquer comme lu</button>
+                            </section>
+                        </div>
+                    </div>
+
+                </section>
+
+                 <section class="NotiSect5">
+
+                    <div class="Alerte">
+                        <div class="Sou_Notisect6_2">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+
+                    <div class="Sou_Notisect4">
+                        <div class="Sou_Notisect6">
+                                <div class="Il_a_5mnt">
+                                     <h4>Commande Expedié</h4>
+                                     <p>Il y a 1 heure</p>
+                                </div>
+                                <p>La commande #CMD-2024-003 a été expédiée avec succès. Numéro de suivi : FR123456789</p>
+                             <section class="NotiBouton">
+                                <button class="NotiBouton2">Suivre l'envoi</button>
+                            </section>
+                        </div>
+                    </div>
+
+                </section>
+
+                 <section class="NotiSect5">
+                    <div class="Alerte">
+                         <div class="Sou_Notisect6_3">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                    </div>
+
+                    <div class="Sou_Notisect4">
+                        <div class="Sou_Notisect6">
+                                <div class="Il_a_5mnt">
+                                     <h4>Sauvegarde automatique Terminée</h4>
+                                     <p>Il y a 2 heures</p>
+                                </div>
+                                <p> Connexion détectée depuis un nouvel appareil (iPhone, Paris, France). Si ce n'est pas vous, changez votre mot de passe.</p>
+                             <section class="NotiBouton">
+                                <button class="NotiBouton3">Voir les détails</button>
+                            </section>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="NotiSect5">
+                    <div class="Alerte">
+                        <div class="Sou_Notisect6_4">
+                          <i class="fa-solid fa-shield"></i>
+                        </div>
+                    </div>
+                    <div class="Sou_Notisect4">
+                        <div class="Sou_Notisect6">
+                                <div class="Il_a_5mnt">
+                                     <h4>Connexion depuis une nouvel appareil</h4>
+                                     <p>Il y a 3 heures</p>
+                                </div>
+                                <p>Connexion détectée depuis un nouvel appareil (iPhone, Paris, France). Si ce n'est pas vous, changez votre mot de passe.</p>
+                             <section class="NotiBouton">
+                                <button class="NotiBouton4">Sécuriser le Compte</button>
+                            </section>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="NotiSect6">
+                    <div>
+                        <input type="checkbox" name="Choix" id="Choix">
+                        <label for="Choix">Selectionner tout </label>
+                    </div>
+                    <div class="Sou_Notisect6_5">
+                        <button> <i class="fa-solid fa-check"></i> Marquer comme lue</button>
+                        <button> <i class="fa-solid fa-trash"></i> Supprimer</button>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- -----------Partie_Profile___________ -->
+
+        <div class="Profil" id="Profils">
+            <div class="SouProfil">
+                <section class="SouProfil1">
+                    <h2><i class="fa-solid fa-user"></i> Mon Profil</h2>
+                    <h2><a href="#"><i class="fa-solid fa-x"></i></a></h2>
+                </section>
+
+                <section class="SouProfil2">
+                    <article class="Art_Profil1"><i class="fa-solid fa-user"></i></article>
+                    <button>Changer La photo</button>
+                </section>
+
+                <section class="SouProfil3">
+                    <article class="Art_Profil2">
+                        <label for="Nom">Nom:</label> <br>
+                        <input type="text" placeholder="">
+                    </article>
+
+                    <article class="Art_Profil2">
+                        <label for="Nom">Prénom:</label> <br>
+                        <input type="text" placeholder="">
+                    </article>
+
+                </section>
+
+                <section class="SouProfil3">
+                    <article class="Art_Profil2">
+                        <label for="Nom">Email:</label> <br>
+                        <input type="email" placeholder="">
+                    </article>
+
+                    <article class="Art_Profil2">
+                        <label for="Nom">Téléphone:</label> <br>
+                        <input type="tel" placeholder="">
+                    </article>
+
+                </section>
+                
+                <div class="SouProfil5">
+                    <section class="SouProfil5_1">
+                         <article class="Art_Profil2">
+                            <label for="Nom">Role:</label> 
+                            <input type="text" placeholder="">
+                        </article>
+                    </section>
+
+                    <section class="SouProfil5_1">
+                        <article class="Art_Profil2">
+                             <label for="Nom">Dernier Connexion:</label> 
+                            <input type="text" placeholder="">
+                        </article>
+                    </section>
+
+                </div>
+                
+                <div class="SouProfil6">
+                    <button>Fermer</button>
+                    <button>Sauvegarder</button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Dashbord.css">
+</head>
+<body>
+  
+    <input type="checkbox" id="menu-toggle" hidden>
+
+       <div class="Dashboard">
+          <ul>
+                <li>
+                    <i class="fa-solid fa-gauge"></i> <a href="Tableau_de_Bord.html">Tableau de bord</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chart-line"></i> <a href="Analytique.html">Analytics</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-cart-shopping"></i> <a href="Gestion_Commande.html">Commandes</a> 
+                </li>
+                <li>
+                    <i class="fa-solid fa-gears"></i> <a href="Parametre.html">Parametre</a>
+                 </li>
+                <li>
+                    <i class="fa-solid fa-chart-bar"></i> <a href="Rapports.html">Rapports</a>
+                </li>
+                <li> 
+                    <i class="fa-solid fa-bell"></i> <a href="Notification.html">Notification</a> 
+                </li>
+            </ul>
+            <div class="Champ1">
+                <section class="sect1">
+                   <i class="fa-solid fa-circle-user"></i>
+                    <article class="Art1">
+                        <h4>Administrateur</h4>
+                        <p>Gestionaire</p>
+                    </article>
+                </section>
+
+                 <section class="sect2">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <article class="Art2">
+                        <a href="#Profils">Mon Profil</a>
+                    </article>
+                </section>
+
+                <section class="sect3">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <article class="Art2">
+                        <a href="index.html">Déconnection</a>
+                    </article>
+                </section>
+
+            </div>
+       </div>
+
+       <div class="Champ2">
+
+            <nav class="NavBar">
+                <section class="Burger">
+                     <div class="SouBurger">
+                        <label for="menu-toggle" class="menu-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                    </div>
+                <h3>Gestion de stock - ProduitS Electroniques</h3>
+                </section>
+                
+                <section class="SouNav">
+                        <i class="fa-solid fa-bell"></i>
+                    <article>
+                        <p> <i class="fa-solid fa-circle-user"></i> Administrateur</p>
+                    </article>
+                </section>
+            </nav>
+
+         <!---------------PARTIE_TABLEAU_DE_BORD------------------->
+            <main>
+
+             
+               <section>
+                 <h2>Tableau de bord Principal</h2>
+                <p>Gestion des stocks de produits électroniques</p>
+               </section>
+
+               <div class="Cards">
+
+                <section class="sect4">
+                    <article class="Icone1">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </article>
+                    <article>
+                        <h3>1,234</h3>
+                        <p>Produits en Stock</p>
+                    </article>
+                </section>
+
+                  <section class="sect4">
+                    <article class="Icone2">
+                       <i class="fa-solid fa-triangle-exclamation"></i>
+                    </article>
+                    <article>
+                        <h3>23</h3>
+                        <p>Stock Faible</p>
+                    </article>
+                </section>
+
+                  <section class="sect4">
+                    <article class="Icone3">
+                        <i class="fa-solid fa-euro-sign"></i>
+                    </article>
+                    <article>
+                        <h3>€45,678</h3>
+                        <p>Valeur Total</p>
+                    </article>
+                </section>
+
+                  <section class="sect4">
+                    <article class="Icone4">
+                       <i class="fa-solid fa-truck"></i>
+                    </article>
+                    <article>
+                        <h3>12</h3>
+                        <p>Commandes en attente</p>
+                    </article>
+                </section>
+
+               </div>
+
+            
+
+            <div class="Box1">
+                <h3>Gestion des Stocks</h3>
+                <input type="search" name="" id=""   placeholder= "🔍 Rechercher un produit" >
+                <section class="sect5">
+                    <article class="Art3">
+                        <i class="fa-solid fa-plus"></i>
+                        <a href="#">Ajouter un Produit</a>
+                    </article>
+                    <article class="Art4">
+                        <i class="fa-solid fa-download"></i>
+                        <a href="#">Exporter</a>
+                    </article>
+                </section>
+            </div>
+
+            <!-- --------------Partie Tableua-------- -->
+
+           <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>PRODUIT</th>
+                            <th>CATÉGORIE</th>
+                            <th> STOCK</th>
+                            <th>PRIX</th>
+                            <th>STATUS</th>
+                            <th>ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>
+                               <div class="SouTab1">
+                                    <i class="fa-solid fa-laptop"></i>
+                                    <section>
+                                        <h4>MacBook Pro 16"</h4>
+                                        <p>Apple -M3 Pro</p>
+                                    </section> 
+                               </div> 
+                            </td>
+                            <td>
+                                <div class="SouTab2">
+                                    <p>Laptop</p>
+                                </div>
+                            </td>
+                            <td> 
+                                <div class="SouTab3">15</div>
+                            </td>
+                            <td>€2,899</td>
+                            <td> 
+                                <div class="SouTab3">Actif</div>
+                            </td>
+                            <td> 
+                                <div class="SouTab4">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                          <tr>
+                            <td>#002</td>
+                            <td>
+                               <div class="SouTab1">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <section>
+                                        <h4>iphone 15 Pro</h4>
+                                        <p>Apple -128GB</p>
+                                    </section> 
+                               </div> 
+                            </td>
+                            <td>
+                                <div class="SouTab5">
+                                    <p>SMARTPHONE</p>
+                                </div>
+                            </td>
+                            <td> 
+                                <div class="SouTab6">8</div>
+                            </td>
+                            <td>€1,199</td>
+                            <td> 
+                                <div class="SouTab3">Actif</div>
+                            </td>
+                            <td> 
+                                <div class="SouTab4">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#003</td>
+                            <td>
+                               <div class="SouTab1">
+                                    <i class="fa-solid fa-headphones"></i>
+                                    <section>
+                                        <h4>AirPods Pro 2</h4>
+                                        <p>Apple -USB-C</p>
+                                    </section> 
+                               </div> 
+                            </td>
+                            <td>
+                                <div class="SouTab7">
+                                    <p>Audio</p>
+                                </div>
+                            </td>
+                            <td> 
+                                <div class="SouTab8">3</div>
+                            </td>
+                            <td>€279</td>
+                            <td> 
+                                <div class="SouTab9">Stock Faible</div>
+                            </td>
+                            <td> 
+                                <div class="SouTab4">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                          <tr>
+                            <td>#004</td>
+                            <td>
+                               <div class="SouTab1">
+                                    <i class="fa-solid fa-tablet-screen-button"></i>
+                                    <section>
+                                        <h4>Aipad Air</h4>
+                                        <p>Apple -64GB</p>
+                                    </section> 
+                               </div> 
+                            </td>
+                            <td>
+                                <div class="SouTab10">
+                                    <p>TABLETE</p>
+                                </div>
+                            </td>
+                            <td> 
+                                <div class="SouTab3">22</div>
+                            </td>
+                            <td>€649</td>
+                            <td> 
+                                <div class="SouTab3">Actif</div>
+                            </td>
+                            <td> 
+                                <div class="SouTab4">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                          <tr>
+                            <td>#005</td>
+                            <td>
+                               <div class="SouTab1">
+                                    <i class="fa-solid fa-tv"></i>
+                                    <section>
+                                        <h4>APPLE TV 4K</h4>
+                                        <p>128GB -WiFi</p>
+                                    </section> 
+                               </div> 
+                            </td>
+                            <td>
+                                <div class="SouTab8">
+                                    <p>TV</p>
+                                </div>
+                            </td>
+                            <td> 
+                                <div class="SouTab6">12</div>
+                            </td>
+                            <td>€179</td>
+                            <td> 
+                                <div class="SouTab3">Actif</div>
+                            </td>
+                            <td> 
+                                <div class="SouTab4">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+       
+            </main>
+
+
+        <!-- -----------Partie_Profile___________ -->
+
+        <div class="Profil" id="Profils">
+            <div class="SouProfil">
+                <section class="SouProfil1">
+                    <h2><i class="fa-solid fa-user"></i> Mon Profil</h2>
+                    <h2><a href="#"><i class="fa-solid fa-x"></i></a></h2>
+                </section>
+
+                <section class="SouProfil2">
+                    <article class="Art_Profil1"><i class="fa-solid fa-user"></i></article>
+                    <button>Changer La photo</button>
+                </section>
+
+                <section class="SouProfil3">
+                    <article class="Art_Profil2">
+                        <label for="Nom">Nom:</label> <br>
+                        <input type="text" placeholder="">
+                    </article>
+
+                    <article class="Art_Profil2">
+                        <label for="Nom">Prénom:</label> <br>
+                        <input type="text" placeholder="">
+                    </article>
+
+                </section>
+
+                <section class="SouProfil3">
+                    <article class="Art_Profil2">
+                        <label for="Nom">Email:</label> <br>
+                        <input type="email" placeholder="">
+                    </article>
+
+                    <article class="Art_Profil2">
+                        <label for="Nom">Téléphone:</label> <br>
+                        <input type="tel" placeholder="">
+                    </article>
+
+                </section>
+                
+                <div class="SouProfil5">
+                    <section class="SouProfil5_1">
+                         <article class="Art_Profil2">
+                            <label for="Nom">Role:</label> 
+                            <input type="text" placeholder="">
+                        </article>
+                    </section>
+
+                    <section class="SouProfil5_1">
+                        <article class="Art_Profil2">
+                             <label for="Nom">Dernier Connexion:</label> 
+                            <input type="text" placeholder="">
+                        </article>
+                    </section>
+
+                </div>
+                
+                <div class="SouProfil6">
+                    <button>Fermer</button>
+                    <button>Sauvegarder</button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

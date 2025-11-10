@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Dashbord.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="menu-toggle" hidden>
+
+    <div class="Dashboard">
+        <ul>
+            <li>
+                <i class="fa-solid fa-gauge"></i> <a href="Tableau_de_Bord.html">Tableau de bord</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-chart-line"></i> <a href="Analytique.html">Analytics</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-cart-shopping"></i> <a href="Gestion_Commande.html">Commandes</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-gears"></i> <a href="Parametre.html">Parametre</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-chart-bar"></i> <a href="Rapports.html">Rapports</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-bell"></i> <a href="Notification.html">Notification</a>
+            </li>
+        </ul>
+        <div class="Champ1">
+            <section class="sect1">
+                <i class="fa-solid fa-circle-user"></i>
+                <article class="Art1">
+                    <h4>Administrateur</h4>
+                    <p>Gestionaire</p>
+                </article>
+            </section>
+
+            <section class="sect2">
+                <i class="fa-solid fa-circle-user"></i>
+                <article class="Art2">
+                    <a href="#Profils">Mon Profil</a>
+                </article>
+            </section>
+
+            <section class="sect3">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <article class="Art2">
+                    <a href="index.html">Déconnection</a>
+                </article>
+            </section>
+
+        </div>
+    </div>
+
+    <div class="Champ2">
+
+        <nav class="NavBar">
+            <section class="Burger">
+                  <div class="SouBurger">
+                        <label for="menu-toggle" class="menu-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                    </div>
+            <h3>Gestion de stock - ProduitS Electroniques</h3>
+            </section>
+           
+            <section class="SouNav">
+                <i class="fa-solid fa-bell"></i>
+                <article>
+                    <p> <i class="fa-solid fa-circle-user"></i> Administrateur</p>
+                </article>
+            </section>
+        </nav>
+
+        <!---------------PARTIE_Parametre & Configuration------------------->
+        <main>
+            <div>
+                <h2><i class="fa-solid fa-gears"></i> Paramètre & Configuration</h2>
+                <p>Configuration du système et préferances utilisateur</p>
+            </div>
+            <div class="Para_Box1">
+                <h3><i class="fa-solid fa-sliders"></i> Paramètres Généraux</h3>
+            </div>
+
+            <div class="Para_Box2">
+
+                <div class="Para_SouBox1">
+
+                    <section class="Para_Sect1">
+                        <article class="Art_para1">
+                            <h4>Notification</h4>
+                            <p>Recevoir des notification par mail</p>
+                        </article>
+                        <label for="Cocher" class="Cocher">
+                            <input type="checkbox" name="" id="Cocher">
+                            <div class="SouCocher"></div>
+                        </label>
+                        
+                    </section>
+
+                    <section class="Para_Sect1">
+                        <article class="Art_para1">
+                            <h4>Mode Sombre</h4>
+                            <p>Activer le thème sombre</p>
+                        </article>
+                        <label for="Cocher1" class="Cocher">
+                            <input type="checkbox" name="" id="Cocher1">
+                            <div class="SouCocher"></div>
+                        </label>
+                        
+                    </section>
+
+                 <section class="Para_Sect1">
+                        <article class="Art_para1">
+                            <h4>Auto-sauvegarde</h4>
+                            <p>Sauvegarder automatiquement les modifications</p>
+                        </article>
+                        <label for="Cocher2" class="Cocher">
+                            <input type="checkbox" name="" id="Cocher2">
+                            <div class="SouCocher"></div>
+                        </label>
+                 </section>
+
+                </div>
+                <section class="Para_Sect2">
+                    <article class="Art_para2">
+                        <h4>Langues</h4>
+                        <p>Langue de l'interface</p>
+                    </article>
+                    <select name="" id="">
+                        <option value="">Français</option>
+                        <option value="">Anglais</option>
+                        <option value="">Espagnol</option>
+                    </select>
+                </section>
+
+            </div>
+
+            <div class="Para_Box1">
+                <h3> <i class="fa-solid fa-boxes-stacked"></i> Gestion de Stock</h3>
+            </div>
+
+            <div class="Para_Box3">
+
+                <section class="Para_Sect3">
+                    <article class="Art_para3">
+                        <h4>Seuil d'alerte</h4>
+                        <p>Nombre minimum d'articles avant alerte</p>
+                    </article>
+                    <article class="Art_para4">5</article>
+                </section>
+
+                <section class="Para_Sect3">
+                    <article class="Art_para3">
+                        <h4>Auto-commande</h4>
+                        <p>Commander automatiquement en cas de stock faible</p>
+                    </article>
+                     <label for="Cocher3" class="Cocher1">
+                            <input type="checkbox" name="" id="Cocher3">
+                            <div class="SouCocher1"></div>
+                    </label>
+                </section>
+
+                <section class="Para_Sect3">
+                    <article class="Art_para3">
+                        <h4>Devise</h4>
+                        <p>Gérer les sessions connectées</p>
+                    </article>
+                    <select name="" id="">
+                        <option value="">Euro(€)</option>
+                        <option value="">Dollard($)</option>
+                        <option value="">Yuane(£)</option>
+                    </select>
+                </section>
+
+            </div>
+
+            <div class="Para_Box1">
+                <h3><i class="fa-solid fa-shield"></i> Sécurité</h3>
+            </div>
+
+            <div class="Para_Box4">
+
+                <section class="Para_Sect3">
+                    <article class="Art_para3">
+                        <h4>Authentification à deux facteurs</h4>
+                        <p>Activer la 2FA pour plus de sécurité</p>
+                    </article>
+                    <button class="Para_BT1"><a href="#">Activer</a></button>
+                </section>
+
+                <section class="Para_Sect3">
+                    <article class="Art_para3">
+                        <h4>Changer le mot de passe</h4>
+                        <p>Modifier votre mot de passe actuel</p>
+                    </article>
+                    <button class="Para_BT2"><a href="#">Changer</a></button>
+                </section>
+
+                <section class="Para_Sect3">
+                    <article class="Art_para3">
+                        <h4>Sessions actives</h4>
+                        <p>Gérer les sessions connectées</p>
+                    </article>
+                    <button class="Para_BT3"><a href="#">Voir (3)</a></button>
+                </section>
+            </div>
+
+            <div class="Para_Box1">
+                <h3><i class="fa-solid fa-database"></i> Système</h3>
+            </div>
+            <div class="Para_Box5">
+                <button><a href="#"> <i class="fa-solid fa-floppy-disk"></i> Sauvegarder la configuration</a></button>
+                <button><a href="#"> <i class="fa-solid fa-download"></i> Exporter les paramètres</a></button>
+                <button><a href="#"> <i class="fa-solid fa-rotate-left"></i> Réinitialiser par défaut</a></button>
+                <button><a href="#"> <i class="fa-solid fa-trash"></i> Effacer toutes les données</a></button>
+            </div>
+        </main>
+
+
+        <!-- -----------Partie_Profile___________ -->
+
+        <div class="Profil" id="Profils">
+            <div class="SouProfil">
+                <section class="SouProfil1">
+                    <h2><i class="fa-solid fa-user"></i> Mon Profil</h2>
+                    <h2><a href="#"><i class="fa-solid fa-x"></i></a></h2>
+                </section>
+
+                <section class="SouProfil2">
+                    <article class="Art_Profil1"><i class="fa-solid fa-user"></i></article>
+                    <button>Changer La photo</button>
+                </section>
+
+                <section class="SouProfil3">
+                    <article class="Art_Profil2">
+                        <label for="Nom">Nom:</label> <br>
+                        <input type="text" placeholder="">
+                    </article>
+
+                    <article class="Art_Profil2">
+                        <label for="Nom">Prénom:</label> <br>
+                        <input type="text" placeholder="">
+                    </article>
+
+                </section>
+
+                <section class="SouProfil3">
+                    <article class="Art_Profil2">
+                        <label for="Nom">Email:</label> <br>
+                        <input type="email" placeholder="">
+                    </article>
+
+                    <article class="Art_Profil2">
+                        <label for="Nom">Téléphone:</label> <br>
+                        <input type="tel" placeholder="">
+                    </article>
+
+                </section>
+                
+                <div class="SouProfil5">
+                    <section class="SouProfil5_1">
+                         <article class="Art_Profil2">
+                            <label for="Nom">Role:</label> 
+                            <input type="text" placeholder="">
+                        </article>
+                    </section>
+
+                    <section class="SouProfil5_1">
+                        <article class="Art_Profil2">
+                             <label for="Nom">Dernier Connexion:</label> 
+                            <input type="text" placeholder="">
+                        </article>
+                    </section>
+
+                </div>
+                
+                <div class="SouProfil6">
+                    <button>Fermer</button>
+                    <button>Sauvegarder</button>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

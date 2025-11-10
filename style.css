@@ -1,0 +1,98 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D3154;
+}
+.Conteneur{
+    height: 50%;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 1px 2px 5px 11px rgba(191,191,191,0.73);
+}
+.Sect1{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+}
+.Sousect1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Sousect1 input{
+    height: 35px;
+    padding-inline: 10px;
+    border-radius:5px;
+    outline: #0D3154;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+.Rappel{
+    margin-right: 140px;
+}
+button {
+    height: 35px;
+    width: 130px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #0D3154;
+    font-weight: 600;
+    margin-right: 150px;
+}
+button a{
+    color: white;
+}
+.Sect1 a{
+    text-decoration: none;
+}
+span{
+    color: #082F51;
+    font-weight: 600;
+}
+/* -------Sect2-------- */
+
+.Sect2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #082F51;
+    color: white;
+    font-weight: 600;
+}
+
+.SM{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #06294c;
+    box-shadow: 1px 2px 16px 4px rgba(191,191,191,0.73);
+}
+
+/* --------Fin_du_css 1rLogin----------- */
+
+
+/* ------------------Dashboard.css------------------ */
+ 

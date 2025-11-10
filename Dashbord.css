@@ -1,0 +1,1972 @@
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+.Dashboard{
+    display: flex;
+    flex-direction: column;
+    width: 306px;
+    height: 100vh;
+    background-color:#1F2E43;
+    position: fixed;
+}
+#menu-toggle{
+    display: none;
+    position: fixed;
+    top: 25px;
+    z-index: 1001;
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+}
+#menu-toggle:checked ~ .Dashboard{
+    left: 0;
+}
+.menu-btn{
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+}
+.menu-btn{
+    font-size: 1.3rem;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    line-height: 40px;
+    font-size: 20px;
+    flex: 1;
+    border-bottom: #f5f5f577 1px solid;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+}
+ul i{
+    margin-right: 10px;
+    color: white;
+}
+ul li:hover{
+    background-color: #0e7ae6;
+    cursor: pointer;
+}
+.Champ1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.sect1{
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2D3C50;
+    color: white;
+}
+.sect1 i{
+    font-size: 40px;
+    color:  #0e7ae6;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+.Art1 h4,p{
+    margin: 0;
+}
+.sect2{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2D3C50;
+    color: white;
+}
+.sect3{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 70%;
+    background-color: #863939;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.Art2 a {
+    color: white;
+    text-decoration: none;
+}
+.Burger{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.SouBurger{
+    display: none;
+}
+.SouBurger i{
+    font-size: 30px;
+}
+.NavBar{
+    height: 5vh;
+    width: 83%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 25px;
+    box-shadow: -1px 1px 5px 2px rgba(0,0,0,0.75);
+    position: fixed;
+    margin-left: 15%;
+}
+.SouNav{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    align-items: center;
+}
+
+
+/* --------Tableau_de_Bord_Css-------- */
+main{
+    width: 1680px;
+    padding: 20px;
+    padding-top: 100px;
+    padding-left: 340px;
+    background-color: whitesmoke;
+}
+.Champ2{
+    display: flex;
+    flex-direction: column;
+}
+.Cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 16px;
+}
+.sect4{
+    display: flex; 
+    width: 100%;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: -1px 1px 5px 2px rgba(0,0,0,0.75);
+    transition: 0.35s ease-in-out;
+}
+.sect4:hover{
+    transform: scale(1.01);
+    box-shadow: -1px 1px 12px 1px rgba(0,0,0,0.75);
+    cursor: pointer;
+}    
+.sect4 p,h3{
+    margin: 0;
+}
+.Icone1{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #0e7ae6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.Icone2{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #e6930e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.Icone3{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #0ea643;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.Icone4{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.Box1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: -1px 1px 5px 2px rgba(0,0,0,0.75);
+}
+.Box1 input{
+    width:15%;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px #ccc;
+}
+.sect5{
+    display: flex;
+    gap: 15px;
+}
+.sect5 a{
+    text-decoration: none;
+    color: white;
+}
+.Art3{
+    background-color: #0e7ae6;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+}
+.Art3:hover{
+    background-color: #054ba7;
+    cursor: pointer;
+    color: thistle;
+}
+.Art4{
+    background-color: rgb(240, 233, 233);
+    padding: 8px;
+    border-radius: 5px;
+}
+.Art4:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.Art4 a{
+    color: black;
+}
+
+table{
+    width: 100%;
+    margin-top: 5px;
+    border-collapse: collapse;
+    background-color: white;
+}
+tr{
+    border-bottom: solid 1px #ccc;
+    transition: all 0.3s ease-in-out;
+}
+
+tr:hover{
+   background-color: #f7f3f3;
+   transform: scaleY(1.05); 
+}
+
+th,td{
+    padding: 30px;
+}   
+thead{
+   background-color: rgb(229, 227, 227);
+   text-align: left;
+}  
+.SouTab1{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.SouTab1 h4{
+    margin: 0;
+}
+.SouTab2{
+    padding: 3px;
+    width: 25%;
+    background-color: rgb(100, 132, 171);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(53, 58, 62);
+}
+.SouTab3{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #65e188;
+}
+.SouTab4{
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.SouTab4 i:hover{
+    cursor: pointer;
+    color: rgb(96, 93, 93);
+    transform: scaleX(1.1);
+}
+.SouTab5{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #65e188;
+}
+.SouTab6, .SouTab7{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #f5a36e;
+}
+.SouTab8{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #c47daa;
+}
+.SouTab9{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #f5a36e;
+}
+.SouTab10{
+    padding: 3px;
+    width: 40%;
+    background-color: rgb(100, 132, 171);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(53, 58, 62);
+}
+
+/* -------Partie_Rapports & Analytique_Css-------- */ 
+.sect5{
+    display: flex;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: -1px 1px 5px 2px rgba(219, 205, 205, 0.75);
+}
+.Sousect1{
+    line-height: 30px;
+    gap: 10px;
+}
+.Sousect2{
+    display: flex;
+    gap: 20px;
+    align-items: end;
+}
+.Sousect2 select{
+    padding: 8px;
+    width: 160px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+}
+.Sousect2 button{
+    padding: 8px;
+    width: 160px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    background-color: #0e7ae6;
+    color: white;
+}
+.Sousect2 button i{
+    color: white;
+}
+.sect6{
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+.Art5{
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #054ba7;
+}
+.Art6{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.Art6 h4{
+    margin: 0;
+}
+.Art6 button{
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+.Art6 button a{
+    text-decoration: none;
+    color: rgb(46, 44, 44);
+}
+.Sousect3{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px 2px rgba(219, 205, 205, 0.75);
+    transition: 0.5S ease;
+}
+.Sousect3:hover{
+    transform: scale(1.01);
+    box-shadow: -1px 1px 5px 2px rgba(119, 116, 116, 0.75);
+}
+
+.SouArt{
+    display: flex;
+    gap: 10px;
+}
+.SouArt p{
+    color: gray;
+    font-size: 15px;
+}
+.SouArt span{
+    color: #0869e7;
+    font-size: 20px;
+}
+.sect7{
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px 2px rgba(219, 205, 205, 0.75);
+}
+/* --------Partie Tbleau2 du Rappor_Ana_____ */
+.SouTab2_1{
+    display: flex;
+    gap: 30px; 
+    color: gray;
+}
+.SouTab2_1 i{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.SouTab2_1 i:hover{
+    color: black;
+    transform: scaleX(1.2);
+}
+
+/* -----------Partie Notifications_Css-------- */
+.NotiSect1{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.NotiArt1{
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    background-color: #054ba7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.Sou_Notisect1{
+    width: 90%;
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: -1px 1px 5px 2px rgba(219, 205, 205, 0.75);
+    transition: 0.3s ease all;
+}
+.Sou_Notisect1:hover{
+    box-shadow: -1px 1px 5px 2px rgba(142, 139, 139, 0.75);
+    transform: scale(1.018);
+    cursor: pointer;
+}
+.NotiArt2{
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    background-color: rgb(231, 45, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.NotiArt3{
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    background-color: rgb(24, 210, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.NotiArt4{
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    background-color:gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.NotiSect2{
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px 2px rgba(219, 205, 205, 0.75);
+}
+.Sou_Notisect2{
+    line-height: 35px;
+}
+.Sou_Notisect3{
+    display: flex;
+    gap: 15px;
+}
+.Sou_Notisect3 select{
+    padding: 8px;
+    width: 160px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+}
+.Sou_Notisect3 button{
+    padding: 8px;
+    width: 100px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    background-color: #0e7ae6;
+    color: white;
+    cursor: pointer;
+}
+.NotiSect3{
+    margin-top: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    border-left: red 5px solid;
+}
+.Il_a_5mnt{
+    display: flex;
+    justify-content: space-between;
+}
+.Sou_Notisect5{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(199, 35, 35);
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Sou_Notisect6 h4,p{
+    margin: 0;
+}
+.Sou_Notisect6 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.NotiBouton{
+  display: flex;
+  gap: 10px;
+}
+.NotiBouton button{
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px gray;
+    cursor: pointer;
+}
+.NotiSect4{
+    margin-top: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    border-left: rgb(25, 0, 255) 5px solid;
+}
+.Sou_Notisect6_1{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(89, 101, 232);
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NotiBouton1{
+    background-color: #137ee8;
+    color: white;
+}
+.NotiSect5{
+    margin-top: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+.Sou_Notisect6_2{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(80, 197, 89);
+    color: rgb(79, 79, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NotiBouton2{
+    background-color: #467eb6;
+    color: white;
+}
+.Sou_Notisect6_3{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color:gray;
+    color: rgb(79, 79, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NotiBouton3{
+    background-color:transparent;
+    color: gray;
+}
+.Sou_Notisect6_4{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(226, 201, 72);
+    color: rgb(102, 102, 193);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NotiSect6{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: -1px 1px 5px 2px rgba(219, 205, 205, 0.75);
+}
+.Sou_Notisect6_5{
+    display: flex;
+    gap: 10px;
+}
+.Sou_Notisect6_5 button{
+    padding: 8px;
+    border-radius: 5px;
+    border: solid 1px gray;
+    cursor: pointer;
+}
+/* ---------Partie_Analytique_Css_________ */
+.SectAna1{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    padding: 10px;
+    gap: 3%;
+}
+.Sousect_Ana1{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    gap: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: -1px 1px 5px 2px rgba(135, 132, 132, 0.75);
+    transition: 0.5s ease all;
+}
+.Sousect_Ana1:hover{
+    transform: scale(1.019);
+    box-shadow: -1px 1px 5px 2px rgba(70, 68, 68, 0.75);
+    cursor: pointer;
+}
+.Art_Ana1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 45px;
+    width: 45px;
+    border-radius: 8px;
+    background-color: #054ba7;
+    color: white;
+}
+.Art_Ana2 h3,p{
+    margin: 0;
+}
+.Art_Ana2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Art_Ana2 aside{
+    text-align: center;
+    width: 60%;
+    border-radius: 15px;
+    background-color: #a7ebbe;
+    color: rgb(6, 91, 3);
+}
+.Art_Ana3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 45px;
+    width: 45px;
+    border-radius: 8px;
+    background-color: #169e24;
+    color: white;
+}
+.Art_Ana4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 45px;
+    width: 45px;
+    border-radius: 8px;
+    background-color: rgb(255, 166, 0);
+    color: white;
+}
+.Art_Ana2_asid aside{
+    background-color: #ed878788;
+    color: rgb(215, 43, 43);
+}
+/* ----------     -------------- */
+.Evolution_vente{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+.Sousect_Ana3{
+    width: 30%;
+}
+.Art_Ana5{
+    padding: 10px;
+    background-color: rgba(237, 231, 231, 0.75);
+}
+.Art_Ana5 select{
+    padding: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.Art_Ana5 h2{
+    margin: 0;
+}
+.Bars{
+    gap: 10px;
+    padding: 40px 10px 20px 10px;
+    background-color: white;
+}
+.Bar1{
+   display: flex;
+   align-items: end;
+   gap: 5px;
+    
+}
+.Bar1 aside{
+    transition: transform 0.4s ease;
+}
+.Bar1 aside:hover{
+   transform: scale(1.1); 
+   box-shadow: -1px 2px 6px 1px rgba(25,99,186,0.75);
+   cursor: pointer;
+}
+
+samp{
+    color: #0869e7;
+}
+.SouBar1{
+    height: 40px;
+    width: 70px;
+    background-color: #1d5fb6;
+    border-radius: 3px;
+}
+.SouBar2{
+    display: flex;
+    align-items: end;
+    height: 70px;
+    width: 70px;
+    background-color: #1d5fb6;
+    border-radius: 3px;
+}
+.SouBar3{
+    display: flex;
+    align-items: end;
+    height: 65px;
+    width: 70px;
+    background-color: #1d5fb6;
+    border-radius: 3px;
+}
+.SouBar4{
+    display: flex;
+    align-items: end;
+    height: 80px;
+    width: 70px;
+    background-color: #1d5fb6;
+    border-radius: 3px;
+}
+.SouBar5{
+    display: flex;
+    align-items: end;
+    height: 75px;
+    width: 70px;
+    background-color: #1d5fb6;
+    border-radius: 3px;
+}
+.SouBar6{
+    display: flex;
+    align-items: end;
+    height: 100px;
+    width: 70px;
+    background-color: #1d5fb6;
+    border-radius: 3px;
+}
+.SouBar7{
+    display: flex;
+    align-items: end;
+    height: 75px;
+    width: 70px;
+    background-color: #1d5fb6;
+    border-radius: 3px;
+}
+.SouBar8{
+    display: flex;
+    align-items: end;
+    height: 170px;
+    width: 70px;
+    background-color: #1d5fb6;
+    border-radius: 3px;
+}
+.SouBar9{
+    display: flex;
+    align-items: end;
+    height: 140px;
+    width: 70px;
+    background-color: #1d5fb6;
+    border-radius: 3px;
+}
+.SouBar10{
+    display: flex;
+    align-items: end;
+    height: 100px;
+    width: 70px;
+    background-color: #1d5fb6;
+    border-radius: 3px;
+}
+.SouBar11{
+    display: flex;
+    align-items: end;
+    height: 170px;
+    width: 70px;
+    background-color: #1d5fb6;
+    border-radius: 3px;
+}
+.SouBar12{
+    display: flex;
+    align-items: end;
+    height: 140px;
+    width: 70px;
+    background-color: #1d5fb6;
+    border-radius: 3px;
+}
+.Bar2{
+    display: flex;
+    gap: 5px;
+    transition: transform 0.4s ease;
+}
+.Bar2 article{
+    transition: transform 0.4s ease;
+}
+.Bar2 article:hover{
+   transform: scale(1.1); 
+    box-shadow: -1px 2px 6px 1px rgba(25,99,186,0.75);
+    cursor: pointer;
+}
+.Bar2 article{
+    width: 70px;
+    text-align: center;
+}
+.Art_Ana6{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background-color: rgba(237, 231, 231, 0.75);
+}
+.SouArt_Anab6{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Bleu{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #1d5fb6;
+}
+.Vert{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #169e24;
+}
+.SouArt_Ana7{
+    display: flex;
+    justify-content: space-between;
+}
+.Art_Ana7_1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 14px;
+    background-color: white;
+}
+.SouArt_Anab8{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.SouArt_Anab8 aside{
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background-color:rgb(226, 220, 220);
+}
+.Sousect_Ana4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px 2px rgba(219, 205, 205, 0.75);
+}
+.Sousect_Ana4 select{
+    height: 30px;
+    width: 120px;
+    padding-inline: 10px;
+    border-radius: 5px;
+}
+/* ____Tab_ANALYTIQUE_____ */
+.SouTab_Ana1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    background-color: orange;
+    color: white;
+}
+.SouTab_Ana2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    background-color: gray;
+    color: white;
+}
+/* -------------Partie_Gestion_Commande_Css____________ */
+.Cards_Ges{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.Card_Ges1{
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: -1px 1px 5px 2px rgba(192, 185, 185, 0.75);
+    transition: transform 0.4s ease;
+    
+}
+.Card_Ges1:hover{
+    box-shadow: -1px 1px 5px 2px rgba(94, 92, 92, 0.75);
+    transform: scale(1.015);
+    cursor: pointer;
+}
+.Art_Ges1{
+    height: 45px;
+    width: 45px;
+    background-color:orange;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.Art_Ges2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Art_Ges5{
+    height: 45px;
+    width: 45px;
+    background-color: rgb(45, 45, 194);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.Art_Ges3{
+    height: 45px;
+    width: 45px;
+    background-color: rgb(170, 97, 219);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.Art_Ges4{
+    height: 45px;
+    width: 45px;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.Cards_Ges2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: -1px 1px 5px 2px rgba(192, 185, 185, 0.75);
+}
+.Sect_Ges1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Sect_Ges2{
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+.Sect_Ges2 select{
+    padding: 9px;
+    border-radius: 5px;
+}
+.SouSect_Ges2 {
+    display: flex;
+    align-items: center;
+}
+.SouSect_Ges2 input{
+    padding: 9px;
+    width: 220px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: solid gray;
+}
+.SouSect_Ges2 label{
+    height: 37px;
+    width: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d5fb6;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: none;
+    margin-left: -10px;
+}
+
+.Cards_Ges3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: -1px 1px 5px 2px rgba(192, 185, 185, 0.75);
+    transition: transform 0.5s ease;
+}
+.Cards_Ges3:hover{
+    box-shadow: -1px 1px 5px 2px rgba(94, 92, 92, 0.75);
+    transform: scale(1.018);
+}
+.Art_Ges7 p{
+    color: gray;
+}
+.Art_Ges6 h4,p{
+    margin: 0;
+}
+.SouSect_Ges3{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.Art_Ges6, .Art_Ges7{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Price1{
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.SouSect_Ges4{
+    padding: 5px;
+    border-radius: 8px;
+    background-color: rgb(242, 238, 238);
+}
+.Art_Ges8{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Art_Ges8 aside{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.Price2{
+    font-weight: 600;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.SouSect_Ges5{
+    display: flex;
+    gap: 20px;
+}
+
+.SouSect_Ges5 button{
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background-color: #0b68e2;
+}
+.SouSect_Ges5 button a{
+    color: white;
+    text-decoration: none;
+}
+.SouSect_Ges5 .BT_Ges {
+    background-color: transparent;
+    border: solid gray;
+}
+.SouSect_Ges5 .BT_Ges a{
+    color: black;
+}
+.SouSect_Ges5 .BT_Ges2{
+    background-color: rgb(217, 205, 205);
+    border: solid gray;
+}
+.SouSect_Ges5 .BT_Ges2 a{
+    color: black;
+}
+.SouSect_Ges5 .BT_Ges3{
+    background-color: #11AEEE;
+    border: solid gray;
+}
+
+/* -------------Partie_Prametre_Css------------------ */
+
+.Para_Box1{
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: rgb(230, 223, 223);
+}
+.Para_Box2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px 2px rgba(192, 185, 185, 0.75);
+}
+.Para_SouBox1{
+    display: flex;
+    gap: 20px;
+}
+.Para_Sect1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: -1px 1px 5px 2px rgba(165, 161, 161, 0.75);
+}
+
+.Art_para1 h4, p{
+    margin: 0;
+}
+.Art_para1{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 5px;
+}
+.Para_Sect1 .Cocher{
+    height: 24px;
+    width: 50px;
+    position: relative;
+    display: block;
+}
+.Cocher input{
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+.Cocher .SouCocher{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background-color: gray;
+    border-radius: 50px;
+}
+.Cocher .SouCocher::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    border-radius:  50%;
+    background-color: rgb(255, 255, 255);
+}
+.Cocher input:checked + .SouCocher{
+    background-color: #1b68cc;
+}
+.Cocher input:checked + .SouCocher::before{
+    transform: translateX(26px);
+}
+.Para_Sect2 h4,p{
+    margin: 0;
+}
+.Art_para2{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Para_Sect2{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    align-items: center;
+    padding: 20px;
+    box-shadow: -1px 1px 5px 2px rgba(165, 161, 161, 0.75);
+}
+.Para_Sect2 select{
+    padding: 5px;
+    border-radius: 5px;
+}
+.Para_Box3{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px 2px rgba(192, 185, 185, 0.75);
+}
+.Para_Sect3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-shadow: -1px 1px 5px 2px rgba(165, 161, 161, 0.75);
+}
+.Para_Sect3 h4,p{
+    margin: 0;
+}
+.Art_para3{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
+}
+.Art_para4{
+    padding: 5px;
+    height: 40%;
+    width: 20%;
+    border-radius: 5px;
+    border: solid gray;
+}
+.Para_Sect3 select{
+     padding: 5px;
+    border-radius: 5px;
+}
+
+.Cocher1{
+    height: 24px;
+    width: 50px;
+    position: relative;
+    display: block;
+}
+.Cocher1 input{
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+.Cocher1 .SouCocher1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background-color: gray;
+    border-radius: 50px;
+}
+.Cocher1 .SouCocher1::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    border-radius:  50%;
+    background-color: rgb(255, 255, 255);
+}
+.Cocher1 input:checked + .SouCocher1{
+    background-color: #1b68cc;
+}
+.Cocher1 input:checked + .SouCocher1::before{
+    transform: translateX(26px);
+}
+.Para_Box4{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px 2px rgba(192, 185, 185, 0.75);
+}
+.Para_BT1{
+    padding: 8px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(201, 197, 197);
+}
+.Para_BT1 a{
+    text-decoration: none;
+    color: black;
+}
+.Para_BT2{
+    padding: 8px;
+    width: 100px;
+    border-radius: 5px;
+    border: solid gray;
+    font-size: 15px;
+    background-color:transparent;
+}
+.Para_BT2 a{
+    text-decoration: none;
+    color: black;
+}
+.Para_BT3{
+    padding: 8px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    background-color:rgb(12, 136, 231);
+}
+.Para_BT3 a{
+    text-decoration: none;
+    color: white;
+}
+.Para_Box5{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px 2px rgba(192, 185, 185, 0.75);
+}
+.Para_Box5 button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.Para_Box5 button a{
+    text-decoration: none;
+    color: black;
+}
+.Para_Box5 button:first-child{
+    background-color: #0869e7;
+    color: white;
+}
+.Para_Box5 button:first-child a{
+    color: white;
+}
+.Para_Box5 button:nth-child(2)  {
+    background-color: transparent;
+    border: solid 1px #ccc;
+}
+.Para_Box5 button:nth-child(3 and 4) {
+    background-color: rgb(235, 229, 229);
+}
+
+/* -----------Partie_Profil------------- */
+
+.Profil{
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    top: 0;
+    position: fixed;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -100%;
+}
+.SouProfil{
+    height: 50%;
+    width: 25%;
+    background-color: white;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px 2px rgba(158, 154, 154, 0.75);
+
+}
+#Profils:target{
+    left: 0;
+}
+.SouProfil1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline:  10px;
+    box-shadow: -1px 1px 5px 2px rgba(158, 154, 154, 0.75);
+}
+.SouProfil2{
+    margin-top: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.SouProfil2 button{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: solid 1px #ccc;
+    cursor: pointer;
+}
+.Art_Profil1{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #4284db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+.SouProfil3{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+    padding: 10px;
+}
+.Art_Profil2{
+ line-height: 1.9rem;
+}
+.Art_Profil2 input{
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+}
+.SouProfil5{
+    padding: 10px;
+}
+.SouProfil5_1 input{
+    width: 90%;
+}
+.SouProfil6{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    justify-content: end;
+    margin-top: 20px;
+    box-shadow: -1px 1px 5px 2px rgba(158, 154, 154, 0.75);
+}
+.SouProfil6 button{
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.SouProfil6 button:nth-child(1) {
+    background-color: transparent;
+    border: solid 1px #ccc;
+}
+.SouProfil6 button:nth-child(2) {
+    background-color: rgb(54, 112, 212);
+    border: solid 1px #ccc;
+    color: white;
+}
+
+/* ------------Partie_details_de_Vente_------------ */
+.Details{
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    top: 0;
+    position: fixed;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -100%;
+}
+.Sou_Details{
+    height: 50%;
+    width: 30%;
+    background-color: white;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px 2px rgba(158, 154, 154, 0.75);
+}
+#Details:target{
+    left: 0;
+}
+.Sect_Detail1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+    box-shadow: -1px 1px 5px 2px rgba(232, 230, 230, 0.75);
+}
+.Sect_Detail1{
+    padding-inline: 10px;
+}
+.Sect_Detail2{
+    padding-inline: 10px;
+    border-bottom: solid 2px #0869e7;
+}
+.Sect_Detail3{
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.Asid_Detail1{
+    line-height: 35px;
+}
+.Asid_Detail1 input{
+    padding: 5px;
+    border-radius: 5px;
+    border: solid #ccc;
+}
+.Sect_Detail4{
+    margin-top: 10px;
+    background-color: rgb(241, 238, 238);
+    border-radius: 5px;
+    padding: 10px;
+}
+.Sect_Detail4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Art_Detail1{
+    display: flex;
+    gap: 15px;
+    font-weight: 600;
+}
+.Art_Detail1 samp:first-child{
+    color: black;
+}
+.Sect_Detail5{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    justify-content: end;
+    box-shadow: -1px 1px 5px 2px rgba(167, 161, 161, 0.75);
+}
+.Sect_Detail5 button{
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 8px;
+}
+.Sect_Detail5 button:nth-child(2){
+    background-color: #054ba7;
+    color: white;
+}
+
+/* __-------Partie_Modification_Commande__________ */
+
+.Modif_Commande{
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    top: 0;
+    position: fixed;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -100%;
+}
+.SouModif_Commande{
+    height: 50%;
+    width: 30%;
+    background-color: white;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px 2px rgba(158, 154, 154, 0.75);
+}
+#Modif_Commande:target{
+    left: 0;
+}
+.Sect_Modif_Com1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+    box-shadow: -1px 1px 5px 2px rgba(232, 230, 230, 0.75);
+}
+.Sect_Modif_Com2{
+    padding: 10px;
+}
+.Sect_Modif_Com3{
+    padding: 10px;
+    line-height: 25px;
+}
+.Sect_Modif_Com3 select{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.Sect_Modif_Com4{
+    padding: 10px;
+    line-height: 25px;
+}
+textarea{
+    width: 90%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.Sect_Modif_Com5{
+    line-height: 25px;
+    padding: 10px;
+}
+.Sect_Modif_Com5 input{
+     width: 90%;
+    padding: 10px;
+    border: solid #ccc;
+    border-radius: 5px;
+}
+
+
+.Sect_Modif_Com6{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    justify-content: end;
+    box-shadow: -1px 1px 5px 2px rgba(188, 183, 183, 0.75);
+}
+.Sect_Modif_Com6 button{
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+.Sect_Modif_Com6 button:nth-child(2){
+    background-color: #054ba7;
+    color: white;
+}
+
+/* -----------Partie_Media_Query-------- */
+
+@media (max-width: 1440px) {
+    
+    .Dashboard{
+    height: 100%;
+}
+}
+
+/* ------------Partie_Tablette----------- */
+
+@media (max-width: 768px) {
+    
+    /* .Dashboard{
+    display: none;
+} */
+
+main{
+ padding-left: 0;
+ padding: 20px;
+ padding-top: 65px;
+ font-size: 30px;
+}
+.NavBar{
+    height: 10vh;
+    width: 97%;
+    margin-left: 0;
+    font-size: 30px;
+}
+.SouBurger{
+    display: block;
+}
+.SouNav{
+    font-size: 30px;
+}
+.Cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.sect4{
+    width: 96%;
+}
+.SectAna1{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 10px;
+    gap: 4%;
+}
+.Sousect_Ana1{
+    width: 95%;
+    gap: 15px;
+}
+.Evolution_vente{
+    flex-direction: column;
+    gap: 30px;
+}
+.Bar1{
+    width: 100%;
+}
+.SouBar1, .SouBar2, .SouBar3, .SouBar3, .SouBar4, .SouBar5, .SouBar6, .SouBar7, .SouBar8, .SouBar9, .SouBar10, .SouBar11, .SouBar12{
+    width: 100%;
+}
+.Bar2 article{
+    width: 100%;
+}
+.Sousect_Ana3{
+    width: 100%;
+}
+.Cards_Ges{
+    display: grid;
+    grid-template-columns:  1fr 1fr ;
+}
+.Card_Ges1{
+    width: 95%;
+}
+.Sect_Ges2{
+   flex-direction: column;
+   align-items: start;
+}
+.Sect_Ges2 select{
+  padding: 25px;  
+  width: 100rem;
+  font-size: 16px;
+}
+.Sect_Ges2 input{
+  font-size: 16px;
+  width: 30rem;
+  padding: 25px; 
+}
+.SouSect_Ges2 label{
+    padding: 18px;
+    font-size: 16px;
+}
+.SouSect_Ges3{
+    gap: 10px;
+    flex-direction: column;
+}
+.Para_SouBox1, .Para_Box4, .Para_Box3, .Para_Box5{
+    flex-direction: column;
+}
+.Para_Sect1,.Para_Sect2, .Para_Sect3{
+    width: 97%;
+    font-size: 16px;
+}
+.Para_Sect2 select, .Para_Sect3 select{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.Art_para4{
+    padding: 10px;
+    height: 45%;
+    width: 5%;
+}
+.Para_Box5 button, .Sousect2 button{
+    padding: 25px;
+    font-size: 20px;
+    text-align: start;
+}
+.Sousect2{
+    flex-direction: column;
+    align-items: start;
+}
+.Sousect2 select, .Sousect2 button{
+    padding: 15px;
+    width: 97rem;
+    font-size: 20px;
+}
+.sect6{
+    flex-direction: column;
+}
+.Sousect3{
+    width: 97%;
+    font-size: 25px;
+}
+.Art5{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    font-size: 28px;
+}
+
+.Art6 button{
+    width: 60%;
+    padding: 10px;
+    font-size: 17px;
+}
+.Art6 p{
+    font-size: 20px;
+}
+.NotiSect1{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+.Sou_Notisect1{
+    width: 95%;
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: -1px 1px 5px 2px rgba(219, 205, 205, 0.75);
+    transition: 0.3s ease all;
+}
+.NotiArt2, .NotiArt1, .NotiArt3, .NotiArt4{
+    height: 50px;
+    width: 50px;
+    font-size: 35px;
+}
+.Sou_Notisect3{
+  flex-direction: column;
+}
+.Sou_Notisect3 select{
+    padding: 15px;
+    width: 98%;
+    font-size: 20px;
+}
+.Sou_Notisect3 button{
+    padding: 17px;
+    width: 101rem;
+    font-size: 20px;
+    text-align: start;
+}
+.Alerte{
+  display: flex;
+  justify-content: center;
+}
+.Il_a_5mnt{
+    flex-direction: column;
+}
+.NotiBouton button{
+    padding: 10px;
+    font-size: 20px;
+}
+.Sou_Notisect5,.Sou_Notisect6_1, .Sou_Notisect6_2, .Sou_Notisect6_3, .Sou_Notisect6_4{
+    height: 60px;
+    width: 60px;
+    font-size: 40px;
+}
+.NotiSect6 input{
+   height: 25px;
+   width: 25px;
+}
+.Sou_Notisect6_5 button{
+    padding: 15px;
+   font-size: 20px;
+}
+
+.Dashboard{
+    position: fixed;
+    z-index: 2;
+    transform: left 0.3s;
+    left: -306px; 
+} 
+ 
+.menu-btn{
+    display: flex;
+    top: 23px;
+}
+}

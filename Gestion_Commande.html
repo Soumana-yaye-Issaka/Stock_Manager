@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Dashbord.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="menu-toggle" hidden>
+
+    <div class="Dashboard">
+        <ul>
+            <li>
+                <i class="fa-solid fa-gauge"></i> <a href="Tableau_de_Bord.html">Tableau de bord</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-chart-line"></i> <a href="Analytique.html">Analytics</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-cart-shopping"></i> <a href="Gestion_Commande.html">Commandes</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-gears"></i> <a href="Parametre.html">Parametre</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-chart-bar"></i> <a href="Rapports.html">Rapports</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-bell"></i> <a href="Notification.html">Notification</a>
+            </li>
+        </ul>
+        <div class="Champ1">
+            <section class="sect1">
+                <i class="fa-solid fa-circle-user"></i>
+                <article class="Art1">
+                    <h4>Administrateur</h4>
+                    <p>Gestionaire</p>
+                </article>
+            </section>
+
+             <section class="sect2">
+                <i class="fa-solid fa-circle-user"></i>
+                <article class="Art2">
+                    <a href="#Profils">Mon Profil</a>
+                </article>
+            </section>
+
+            <section class="sect3">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <article class="Art2">
+                    <a href="index.html">Déconnection</a>
+                </article>
+            </section>
+
+        </div>
+    </div>
+
+    <div class="Champ2">
+
+        <nav class="NavBar">
+            <section class="Burger">
+                <div class="SouBurger">
+                <label for="menu-toggle" class="menu-btn">
+                            <i class="fa-solid fa-bars"></i>
+                </label>
+             </div>
+             <h3>Gestion de stock - ProduitS Electroniques</h3>
+            </section>
+             
+            
+            <section class="SouNav">
+                <i class="fa-solid fa-bell"></i>
+                <article>
+                    <p> <i class="fa-solid fa-circle-user"></i> Administrateur</p>
+                </article>
+            </section>
+        </nav>
+
+        <!---------------PARTIE_Gestion de commande------------------->
+        <main>
+
+            <div>
+                <h2><i class="fa-solid fa-cart-shopping"></i> Gestion des commandes</h2>
+                <p>Suivi et gestion complète des commandes clients</p>
+            </div>
+
+            <div class="Cards_Ges">
+
+                <section class="Card_Ges1">
+                    <article class="Art_Ges1"><i class="fa-solid fa-clock"></i></article>
+
+                    <article class="Art_Ges2">
+                        <h3>23</h3>
+                        <p>En attente</p>
+                    </article>
+
+                </section>
+
+                <section class="Card_Ges1">
+                    <article class="Art_Ges5"><i class="fa-solid fa-gear"></i></article>
+
+                    <article class="Art_Ges2">
+                        <h3>45</h3>
+                        <p>En cours</p>
+                    </article>
+
+                </section>
+
+                <section class="Card_Ges1">
+                    <article class="Art_Ges3"><i class="fa-solid fa-truck-fast"></i></article>
+
+                    <article class="Art_Ges2">
+                        <h3>67</h3>
+                        <p>Expédiées</p>
+                    </article>
+
+                </section>
+
+                <section class="Card_Ges1">
+                    <article class="Art_Ges4"><i class="fa-solid fa-clock"></i></article>
+
+                    <article class="Art_Ges2">
+                        <h3>234</h3>
+                        <p>Livrées</p>
+                    </article>
+
+                </section>
+
+            </div>
+
+            <div class="Cards_Ges2">
+
+                <section class="Sect_Ges2">
+
+                    <div class="Sect_Ges1">
+                        <label for="">Statut:</label> 
+                        <select name="statut" id="statut">
+                            <option value="">Tous les statuts</option>
+                            <option value="en-attente">En attente</option>
+                             <option value="en-cours">En cours</option>
+                            <option value="expediees">Expédiées</option>
+                            <option value="livrees">Livrées</option>
+                        </select>
+                    </div>
+
+                    <div class="Sect_Ges1">
+                        <label for="">Période:</label> 
+                        <select name="statut" id="statut">
+                            <option value="">Tous les statuts</option>
+                            <option value="en-attente">En attente</option>
+                             <option value="en-cours">En cours</option>
+                            <option value="expediees">Expédiées</option>
+                            <option value="livrees">Livrées</option>
+                        </select>
+                    </div>
+
+                    <section class="SouSect_Ges2">
+                        <input type="search" name="Recherche" id="Recherche" placeholder="Rechercher une commande....">
+                        <label for="Recherche"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    </section>
+
+                </section>
+
+            </div>
+
+            <div class="Cards_Ges3">
+                <section class="SouSect_Ges3">
+                    <article class="Art_Ges6">
+                        <h4>Commande #CMD-2024-001</h4>
+                        <p>Client: Jean Dupont</p>
+                        <p>Date: 15 Jan 2024</p>
+                    </article>
+                    <article class="Art_Ges7">
+                        <p>En attente</p>
+                        <samp class="Price1">€1,199.00</samp>
+                    </article>
+                </section>
+
+                <section class="SouSect_Ges4">
+                    <i class="fa-solid fa-mobile"></i>
+                    <article class="Art_Ges8">
+                        <aside>
+                            <h4>iPhone 15 Pro</h4>
+                            <p>128GB - Bleu</p>
+                        </aside>
+                        <p>x1</p>
+                        <p>€1,199.00</p>
+                        <samp class="Price2">€1,199.00</samp>
+                    </article>
+                </section>
+
+                <section class="SouSect_Ges5">
+                    <button><a href="#Details"> <i class="fa-solid fa-eye"></i> Voir détails</a></button>
+                    <button class="BT_Ges"><a href="#Modif_Commande"> <i class="fa-solid fa-pen-to-square"></i> Modifier</a></button>
+                    <button class="BT_Ges2"><a href="#"> <i class="fa-solid fa-check"></i> Traiter</a></button>
+                </section>
+            </div>
+
+            <div class="Cards_Ges3">
+                <section class="SouSect_Ges3">
+                    <article class="Art_Ges6">
+                        <h4>Commande #CMD-2024-002</h4>
+                        <p>Client: Marie Martin</p>
+                        <p>Date : 14 Jan 2024</p>
+                    </article>
+                    <article class="Art_Ges7">
+                        <p>En cour</p>
+                        <samp class="Price1">€1,199.00</samp>
+                    </article>
+                </section>
+
+                <section class="SouSect_Ges4">
+                    <i class="fa-solid fa-laptop"></i>
+                    <article class="Art_Ges8">
+                        <aside>
+                            <h4>MacBook Pro 16"</h4>
+                            <p>M3 Pro - 512GB</p>
+                        </aside>
+                        <p>x1</p>
+                        <samp class="Price2">€2,899.00</samp>
+                    </article>
+                </section>
+
+                <section class="SouSect_Ges5">
+                    <button><a href="#"> <i class="fa-solid fa-eye"></i> Voir détails</a></button>
+                    <button class="BT_Ges"><a href="#"> <i class="fa-solid fa-pen-to-square"></i> Modifier</a></button>
+                    <button class="BT_Ges3"><a href="#"> <i class="fa-solid fa-truck"></i> Expédier</a></button>
+                </section>
+            </div>
+
+            <div class="Cards_Ges3">
+                <section class="SouSect_Ges3">
+                    <article class="Art_Ges6">
+                        <h4>Commande #CMD-2024-003</h4>
+                        <p>Client : Pierre Durand</p>
+                        <p>Date : 13 Jan 2024</p>
+                    </article>
+                    <article class="Art_Ges7">
+                        <p>Expedié</p>
+                        <samp class="Price1">€558.00</samp>
+                    </article>
+                </section>
+
+                <section class="SouSect_Ges4">
+                    <i class="fa-solid fa-headphones"></i>
+                    <article class="Art_Ges8">
+                        <aside>
+                            <h4>AirPods Pro 2</h4>
+                            <p>USB-C</p>
+                        </aside>
+                        <p>x2</p>
+                        <samp class="Price2">€1,199.00</samp>
+                    </article>
+                </section>
+
+                <section class="SouSect_Ges5">
+                    <button class="tt"><a href="#"> <i class="fa-solid fa-eye"></i> Voir détails</a></button>
+                    <button class="BT_Ges3"><a href="#"> <i class="fa-solid fa-location-dot"></i> Suivre</a></button>
+                    <button class="BT_Ges2"><a href="#"> <i class="fa-solid fa-circle-check"></i> Marquer livrée</a></button>
+                </section>
+            </div>
+
+        </main>
+
+     <!-- -----------Partie_detail_commande___________    -->
+
+        <div class="Details" id="Details">
+            <div class="Sou_Details">
+
+                <section class="Sect_Detail1">
+                    <h1><i class="fa-solid fa-eye"></i> Détails de la Commande</h1>
+                    <h2><a href=""><i class="fa-solid fa-x"></i></a></h2>
+                </section>
+
+                <section class="Sect_Detail2">
+                    <h2>Informations Commande</h2>
+                </section>
+
+                <section class="Sect_Detail3">
+
+                    <article>
+                        <aside>
+                            <p>Numéro Commande:</p>
+                            <h4>Commande #CMD-2024-002</h4>
+                        </aside>
+                        <aside>
+                            <p>Statut:</p>
+                            <h4>En cours</h4>
+                        </aside>
+                    </article>
+
+                    <article>
+                        <aside>
+                            <p>Date de commande:</p>
+                            <h4>14 Jan 2024</h4>
+                        </aside>
+                        <aside>
+                            <p>Total :</p>
+                            <h4>€2,899.00</h4>
+                        </aside>
+                    </article>
+
+                </section>
+
+                <section class="Sect_Detail2">
+                    <h2>Informations Client</h2>
+                </section>
+
+                <section class="Sect_Detail3">
+
+                    <article>
+                        <aside>
+                            <p>Nom :</p>
+                            <h4>Marie Martin</h4>
+                        </aside>
+                        <aside class="Asid_Detail1">
+                            <p>Téléphone:</p> 
+                            <input type="tel">
+                        </aside>
+                    </article>
+
+                    <article>
+                        <aside class="Asid_Detail1">
+                            <p>Email :</p>
+                            <input type="email">
+                        </aside>
+                        <aside class="Asid_Detail1">
+                            <p>Adresse :</p>
+                            <input type="adress">
+                        </aside>
+                    </article>
+                </section>
+
+                <section class="Sect_Detail2">
+                    <h2>Articles Commandés</h2>
+                </section>
+
+                <section class="Sect_Detail4">
+                    <article>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h4>iPhone 15 Pro 128GB -</h4>
+                        <p>Bleu</p>
+                    </article>
+
+                    <article class="Art_Detail1">
+                        <samp>€1,199.00</samp>
+                        <samp>€1,199.00</samp>
+                    </article>
+                </section>
+
+                <section class="Sect_Detail5">
+                    <button>Fermer</button>
+                    <button>Fermer</button>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- ---------Partie_Modification_commande---------- -->
+
+        <div class="Modif_Commande" id="Modif_Commande">
+            <div class="SouModif_Commande">
+
+                <section class="Sect_Modif_Com1">
+                    <h1> <i class="fa-solid fa-pen-to-square"></i> Modifier la Commande</h1>
+                    <h2><a href="#"><i class="fa-solid fa-xmark"></i></a></h2>
+                </section>
+
+                <section class="Sect_Modif_Com2"><h2>Statut de la commande</h2></section>
+
+                <section class="Sect_Modif_Com3">
+                    <label for="#">Statut:</label> <br>
+                    <select name="" id="">
+                        <option value="">En cours</option>
+                        <option value="">Expedié</option>
+                        <option value="">En attente</option>
+                        <option value="">Livré</option>
+                    </select>
+                </section>
+
+                <section class="Sect_Modif_Com2"><h2>Informations de livraison</h2></section>
+
+                <section class="Sect_Modif_Com4">
+                    <label for="#">Adresse de livraison :</label> <br>
+                    <textarea name="" id=""></textarea>
+                </section>
+
+                <section class="Sect_Modif_Com5">
+                    <label for="">Date de livraison prévue :</label> <br>
+                    <input type="date" name="" id="">
+                </section>
+
+                <section class="Sect_Modif_Com2"><h2>Notes</h2></section>
+
+                <section class="Sect_Modif_Com4">
+                    <label for="#">Notes internes:</label> <br>
+                    <textarea name="" id=""></textarea>
+                </section>
+
+                <section class="Sect_Modif_Com6">
+                    <button>Annuler</button>
+                    <button>Sauvegarder</button>
+                </section>
+
+            </div>
+        </div>
+
+
+
+        <!-- -----------Partie_Profile___________ -->
+
+        <div class="Profil" id="Profils">
+            <div class="SouProfil">
+                <section class="SouProfil1">
+                    <h2><i class="fa-solid fa-user"></i> Mon Profil</h2>
+                    <h2><a href="#"><i class="fa-solid fa-x"></i></a></h2>
+                </section>
+
+                <section class="SouProfil2">
+                    <article class="Art_Profil1"><i class="fa-solid fa-user"></i></article>
+                    <button>Changer La photo</button>
+                </section>
+
+                <section class="SouProfil3">
+                    <article class="Art_Profil2">
+                        <label for="Nom">Nom:</label> <br>
+                        <input type="text" placeholder="">
+                    </article>
+
+                    <article class="Art_Profil2">
+                        <label for="Nom">Prénom:</label> <br>
+                        <input type="text" placeholder="">
+                    </article>
+
+                </section>
+
+                <section class="SouProfil3">
+                    <article class="Art_Profil2">
+                        <label for="Nom">Email:</label> <br>
+                        <input type="email" placeholder="">
+                    </article>
+
+                    <article class="Art_Profil2">
+                        <label for="Nom">Téléphone:</label> <br>
+                        <input type="tel" placeholder="">
+                    </article>
+
+                </section>
+                
+                <div class="SouProfil5">
+                    <section class="SouProfil5_1">
+                         <article class="Art_Profil2">
+                            <label for="Nom">Role:</label> 
+                            <input type="text" placeholder="">
+                        </article>
+                    </section>
+
+                    <section class="SouProfil5_1">
+                        <article class="Art_Profil2">
+                             <label for="Nom">Dernier Connexion:</label> 
+                            <input type="text" placeholder="">
+                        </article>
+                    </section>
+
+                </div>
+                
+                <div class="SouProfil6">
+                    <button>Fermer</button>
+                    <button>Sauvegarder</button>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
