@@ -12,6 +12,11 @@ body{
     background-color:#1F2E43;
     position: fixed;
 }
+.Logo_Dash{
+    border-bottom: solid rgb(144, 139, 139);
+    padding-inline: 20px;
+    color: white;
+}
 #menu-toggle{
     display: none;
     position: fixed;
@@ -58,6 +63,7 @@ ul li:hover{
     cursor: pointer;
 }
 .Champ1{
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -562,6 +568,7 @@ thead{
 .Sou_Notisect3{
     display: flex;
     gap: 15px;
+   align-items: end;
 }
 .Sou_Notisect3 select{
     padding: 8px;
@@ -784,7 +791,7 @@ thead{
     gap: 30px;
 }
 .Sousect_Ana3{
-    width: 30%;
+    width: 100%;
 }
 .Art_Ana5{
     padding: 10px;
@@ -1789,7 +1796,21 @@ main{
     grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
+.Icone1,.Icone2, .Icone3, .Icone4{
+    height: 70px;
+    width: 70px;
+    font-size: 40px;
+}
+
+.Box1 input{
+    width: 25%;
+    height: 65px;
+    padding: 15px;
+    font-size: 25px;
+}
 .sect4{
+    font-size: 30px;
+    height: 100%;
     width: 96%;
 }
 .SectAna1{
@@ -1833,16 +1854,16 @@ main{
 .Sect_Ges2 select{
   padding: 25px;  
   width: 100rem;
-  font-size: 16px;
+  font-size: 26px;
 }
 .Sect_Ges2 input{
-  font-size: 16px;
+  font-size: 26px;
   width: 30rem;
   padding: 25px; 
 }
 .SouSect_Ges2 label{
-    padding: 18px;
-    font-size: 16px;
+    padding: 24px;
+    font-size: 25px;
 }
 .SouSect_Ges3{
     gap: 10px;
@@ -1877,7 +1898,7 @@ main{
 .Sousect2 select, .Sousect2 button{
     padding: 15px;
     width: 97rem;
-    font-size: 20px;
+    font-size: 23px;
 }
 .sect6{
     flex-direction: column;
@@ -1887,19 +1908,24 @@ main{
     font-size: 25px;
 }
 .Art5{
-    height: 50px;
-    width: 50px;
-    border-radius: 5px;
-    font-size: 28px;
+    height: 70px;
+    width: 70px;
+    font-size: 35px;
 }
 
 .Art6 button{
     width: 60%;
     padding: 10px;
-    font-size: 17px;
+    font-size: 22px;
+}
+.Art6 {
+    font-size: 25px;
 }
 .Art6 p{
-    font-size: 20px;
+    font-size: 25px;
+}
+.Art6 span{
+    font-size: 23px;
 }
 .NotiSect1{
     display: grid;
@@ -1915,22 +1941,24 @@ main{
     transition: 0.3s ease all;
 }
 .NotiArt2, .NotiArt1, .NotiArt3, .NotiArt4{
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     font-size: 35px;
 }
 .Sou_Notisect3{
   flex-direction: column;
+  align-items: normal;
 }
+
 .Sou_Notisect3 select{
-    padding: 15px;
+    padding: 18px;
     width: 98%;
-    font-size: 20px;
+    font-size: 30px;
 }
 .Sou_Notisect3 button{
-    padding: 17px;
-    width: 101rem;
-    font-size: 20px;
+    padding: 20px;
+    width: 98%;
+    font-size: 30px;
     text-align: start;
 }
 .Alerte{
@@ -1942,20 +1970,23 @@ main{
 }
 .NotiBouton button{
     padding: 10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 .Sou_Notisect5,.Sou_Notisect6_1, .Sou_Notisect6_2, .Sou_Notisect6_3, .Sou_Notisect6_4{
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     font-size: 40px;
 }
 .NotiSect6 input{
-   height: 25px;
-   width: 25px;
+   height: 30px;
+   width: 30px;
+}
+.NotiSect6 label{
+    font-size: 30px;
 }
 .Sou_Notisect6_5 button{
     padding: 15px;
-   font-size: 20px;
+   font-size: 25px;
 }
 
 .Dashboard{
@@ -1969,4 +2000,113 @@ main{
     display: flex;
     top: 23px;
 }
+/* --------- */
+.SouTab3{
+    font-size: 35px;
+    width: 45%;
+}
+.SouTab2{
+    font-size: 35px;
+    padding: 4px;
+    width: 40%;
+}
+tr{
+    font-size: 30px;
+}
+.SouTab5{
+    width: 90%;
+}
+.SouTab6, .SouTab7, .SouTab8{
+    width: 40%;
+    font-size: 35px;
+}
+.SouTab10{
+    width: 55%;
+}
+.Cards{
+    margin-bottom: 40px;
+}
+.Dashboard{
+    font-size: 25px;
+}
+.Dashboard h1{
+    font-size: 40px;
+}
+.Dashboard ul{
+    line-height: 50px;
+    font-size: 28px;
+}
+.Art_Ana1, .Art_Ana3, .Art_Ana4{
+    font-size: 35px;
+    height: 70px;
+    width: 70px;
+}
+.Art_Ana5 select{
+    padding: 10px;
+    margin-top: 10px;
+    height: 50px;
+    width: 250px;
+    font-size: 25px;
+}
+.SouArt_Anab6 p{
+    font-size: 35px;
+}
+.Bleu, .Vert{
+    height: 25px;
+    width: 25px;
+}
+.SouArt_Anab8 aside{
+    height: 16px;
+}
+.Sousect_Ana4 select{
+    height: 50px;
+    width: 190px;
+   font-size: 25px;
+}
+.Art_Ges1, .Art_Ges5, .Art_Ges3, .Art_Ges4{
+    height: 70px;
+    width: 70px;
+    font-size: 35px;
+}
+.SouSect_Ges5 button{
+    padding: 15px;
+    font-size: 25px;
+}
+.Price1{
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+.Art_Ges8 p{
+    font-size: 30px;
+}
+.Art_Ges8 samp{
+    font-size: 22px;
+}
+.Art_para1, .Art_para2 {
+    font-size: 35px;
+}
+.Para_Sect2 select, .Para_Sect3 select{
+    padding: 10px;
+    width: 150px;
+    font-size: 25px;
+}
+.Art_para3{
+    font-size: 35px;
+}
+.Art_para4{
+    padding: 10px;
+    font-size: 30px;
+}
+.Para_Sect3 button{
+    padding: 10px;
+    width: 150px;
+    font-size: 25px;
+}
+.Para_Box5 button{
+    padding: 15px;
+   font-size: 25px;
+}
+
+
 }

@@ -42,7 +42,8 @@ form{
     width: 80%;
 }
 .Rappel{
-    margin-right: 140px;
+    display: flex;
+    justify-content: start;
 }
 button {
     height: 35px;
@@ -93,6 +94,4 @@ span{
 
 /* --------Fin_du_css 1rLogin----------- */
 
-
-/* ------------------Dashboard.css------------------ */
  
